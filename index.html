@@ -326,38 +326,37 @@
 
       
         
-          <p>##前沿：<br> 　　经过各种网上找资料，终于使用hexo把个人博客搭建成功了，目前域名使用的还是GitHub的，我的hexo版本是3.2.2，hexo版本不同，配置是不一样的，但是参考hexo官方文档，基本都是大同小异的。好了，话不多说，进入正题。</p>
+          
+            <p>##前沿：<br> 　　经过各种网上找资料，终于使用hexo把个人博客搭建成功了，目前域名使用的还是GitHub的，我的hexo版本是3.2.2，hexo版本不同，配置是不一样的，但是参考hexo官方文档，基本都是大同小异的。好了，话不多说，进入正题。</p>
 <p>##正文：<br>　　近期空闲时间较多，在搭建微信公众号时，多多少少遇到了一些问题，以前喜欢将问题记录到印象笔记里，但是笔记格式不好调整。最近看到 一些大神们的博客，貌似都是用hexo搭建的，版式还很漂亮，我也依葫芦画瓢的搭建了一个。</p>
 <p>###环境准备</p>
-<p>####安装<a href="https://nodejs.org">Node</a><br>　　作用：node.js用来创建hexo博客框架，生成静态页面</p>
-<p>####安装<a href="https://git-scm.com/download">Git</a><br>　　作用：把本地的hexo内容提交到github上去。</p>
-<p>####申请<a href="https://github.com/">GitHub</a><br>　　作用：用来做博客的远程仓库、域名、服务器。<br>github账号直接在官网申请就可以了，SSH Keys配置什么的这篇文章就不写了，我本地之前已经配置好了，后面如果有时间会出专门的一个章节来描述怎么配置，当然网上教程一大堆，也可以直接参考别人的。</p>
-<p>###安装<a href="https://hexo.io/">Hexo</a><br>　　hexo直接用npm命令安装就可以了。直接在git bash或cmd下输入全局安装(－ｇ)命令:</p>
+<p>####安装<a href="https://nodejs.org" target="_blank" rel="external">Node</a><br>　　作用：node.js用来创建hexo博客框架，生成静态页面</p>
+<p>####安装<a href="https://git-scm.com/download" target="_blank" rel="external">Git</a><br>　　作用：把本地的hexo内容提交到github上去。</p>
+<p>####申请<a href="https://github.com/" target="_blank" rel="external">GitHub</a><br>　　作用：用来做博客的远程仓库、域名、服务器。<br>github账号直接在官网申请就可以了，SSH Keys配置什么的这篇文章就不写了，我本地之前已经配置好了，后面如果有时间会出专门的一个章节来描述怎么配置，当然网上教程一大堆，也可以直接参考别人的。</p>
+<p>###安装<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a><br>　　hexo直接用npm命令安装就可以了。直接在git bash或cmd下输入全局安装(－ｇ)命令:</p>
 <p><pre><code>npm install -g hexo</code></pre><br>　　安装完成后，在你需要建立hexo的地方建立一个工作文件夹，我的是在e盘建立hexo文件夹，在hexo文件夹内执行以下命令(命令行都是在git bash或者cmd下执行的后面所有说的命令都是在这里执行的)，Hexo即会自动在目标文件夹建立网站所需要的所有文件</p>
 <p><pre><code>hexo init</code></pre><br>　　上面的命令也可以在任意文件夹用此命令代替</p>
 <p><pre><code>hexo init E:\hexo</code></pre><br>　　初始化文件夹后ｃｄ到文件夹目录，安装依赖包，执行以下命令</p>
 <p><pre><code>npm install</code></pre><br>　　这里先说明一下hexo几个常用命令到底是几个意思</p>
 <p><pre><code>hexo g #完整命令为hexo generate，用于生成静态文件<br>hexo s #完整命令为hexo server，用于启动服务器，主要用来本地预览<br>hexo d #完整命令为hexo deploy，用于将本地文件发布到github上(当然可发布到其他地方)<br>hexo n #完整命令为hexo new，用于新建一篇文章</code></pre><br>　　让我们看看刚刚的那些小代码给我们带来了什么惊喜，在E:\hexo内执行以下命令</p>
-<p><pre><code>hexo g<br>hexo s</code></pre><br>　　用浏览器访问<a href="http://localhost:4000">http://localhost:4000</a>，此时，您应该看到了一个漂亮的博客了，博客里默认给你添加了一篇程序猿专用的文章Hello World，当然这个博客只存在你的本地，别人是无法看到的，hexo3使用的默认主题是landscape。轻轻松松就看到了效果，是不是很激动，这就是hexo的强大之处，接下来讲告诉你怎么把你的博客部署到GitHub上，可以让别人也看到你写的博客。</p>
-<p>###GitHub创建Repository<br> 　　repository相当于一个仓库，用来放置你的代码的。首先登陆GitHub，并今日个人页面选择repositories，然后New一个repository<br>创建时，只需要填写Repository name即可，当然这个名字可不是乱写的，名字的格式必须为youname.github.io,例如我的github地址是<a href="https://github.com/ruiger">https://github.com/ruiger</a>,我的名字就为ruiger.github.io</p>
+<p><pre><code>hexo g<br>hexo s</code></pre><br>　　用浏览器访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，此时，您应该看到了一个漂亮的博客了，博客里默认给你添加了一篇程序猿专用的文章Hello World，当然这个博客只存在你的本地，别人是无法看到的，hexo3使用的默认主题是landscape。轻轻松松就看到了效果，是不是很激动，这就是hexo的强大之处，接下来讲告诉你怎么把你的博客部署到GitHub上，可以让别人也看到你写的博客。</p>
+<p>###GitHub创建Repository<br> 　　repository相当于一个仓库，用来放置你的代码的。首先登陆GitHub，并今日个人页面选择repositories，然后New一个repository<br>创建时，只需要填写Repository name即可，当然这个名字可不是乱写的，名字的格式必须为youname.github.io,例如我的github地址是<a href="https://github.com/ruiger" target="_blank" rel="external">https://github.com/ruiger</a>,我的名字就为ruiger.github.io</p>
 <p>###部署本地文件到github<br>　　既然Repository已经创建了，现在就把博客放到GitHub看看效果。编辑hexo文件夹下的_config.yml，建议用文本编辑器打开如Notepad++这个是免费的。<br>在_config.yml的最下方，添加如下代码(注意hexo命令:后要跟一个空格)，配置完成并保存</p>
-<p><pre><code><br>deploy:<br>  type: git<br>  repository: <a href="https://github.com/ruiger/ruiger.github.io">https://github.com/ruiger/ruiger.github.io</a><br>  branch： master<br></code></pre><br>　　第一次使用github可能需要配置SSH，这里不赘述了网上有很多教程。配置完github后在hexo执行如下命令</p>
+<p><pre><code><br>deploy:<br>  type: git<br>  repository: <a href="https://github.com/ruiger/ruiger.github.io" target="_blank" rel="external">https://github.com/ruiger/ruiger.github.io</a><br>  branch： master<br></code></pre><br>　　第一次使用github可能需要配置SSH，这里不赘述了网上有很多教程。配置完github后在hexo执行如下命令</p>
 <p><pre><code><br>hexo g<br>hexo d<br></code></pre><br>　　如果执行hexo d命令报错:<br>ERROR Deployer not found：git<br>需要安装hexo-deployer-git这个模块</p>
-<p><pre><code><br>npm install hexo-deployer-git –save<br></code></pre><br>　　安装好了继续执行hexo d部署命令，在浏览器输入你的地址，我的为<a href="http://ruiger.github.io">ruiger.github.io</a><br><img src="/2017/03/29/hexo搭建个人博客/ruiger_hexo.png" alt="">
+<p><pre><code><br>npm install hexo-deployer-git –save<br></code></pre><br>　　安装好了继续执行hexo d部署命令，在浏览器输入你的地址，我的为<a href="http://ruiger.github.io" target="_blank" rel="external">ruiger.github.io</a><br><img src="/2017/03/29/hexo搭建个人博客/ruiger_hexo.png" alt="">
 　</p>
 <p>###发表一篇文章</p>
 <ul>
 <li>在Git Bash执行命令<pre><code>
 hexo new "my new post"
 </code></pre></li>
-<li>在hexo文件夹下的source_post中打开my-new-post.md，打开方式使用记事本或者其它文本工具，当然最好是使用makedown专用的工具，这里推荐<a href="http://markdownpad.com/">markdownpad</a>这个工具。Markdown编写语法自己google一下，不难，很容易就学到手了。<br><pre><code>title: my new post #可以改成中文的，如“新文章”<br>date: 2016-02-21 16:04:09 #发表日期，一般不改动<br>categories: blog #文章文类<h2 id="tags-文章-文章标签，多于一项时用这种格式，只有一项时使用tags-blog"><a href="#tags-文章-文章标签，多于一项时用这种格式，只有一项时使用tags-blog" class="headerlink" title="tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog"></a>tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</h2>这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上<br></code></pre></li></ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/29/hexo搭建个人博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+<li>在hexo文件夹下的source_post中打开my-new-post.md，打开方式使用记事本或者其它文本工具，当然最好是使用makedown专用的工具，这里推荐<a href="http://markdownpad.com/" target="_blank" rel="external">markdownpad</a>这个工具。Markdown编写语法自己google一下，不难，很容易就学到手了。</li>
+</ul>
+<p>　　写完文章后，你可以使用1.$ hexo g生成静态文件。2.$ hexo s在本地预览效果。3.hexo d同步到github，然后使用<a href="http://youname.github.io" target="_blank" rel="external">http://youname.github.io</a> 进行访问。</p>
+<p>   　</p>
+
+          
         
       
     </div>

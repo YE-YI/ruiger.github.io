@@ -96,7 +96,7 @@
 <meta property="og:description" content="##前沿： 　　经过各种网上找资料，终于使用hexo把个人博客搭建成功了，目前域名使用的还是GitHub的，我的hexo版本是3.2.2，hexo版本不同，配置是不一样的，但是参考hexo官方文档，基本都是大同小异的。好了，话不多说，进入正题。
 ##正文：　　近期空闲时间较多，在搭建微信公众号时，多多少少遇到了一些问题，以前喜欢将问题记录到印象笔记里，但是笔记格式不好调整。最近看到 一些大神们的博">
 <meta property="og:image" content="http://yoursite.com/2017/03/29/hexo搭建个人博客/ruiger_hexo.png">
-<meta property="og:updated_time" content="2017-03-29T08:21:26.692Z">
+<meta property="og:updated_time" content="2017-03-29T08:28:02.409Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建个人博客">
 <meta name="twitter:description" content="##前沿： 　　经过各种网上找资料，终于使用hexo把个人博客搭建成功了，目前域名使用的还是GitHub的，我的hexo版本是3.2.2，hexo版本不同，配置是不一样的，但是参考hexo官方文档，基本都是大同小异的。好了，话不多说，进入正题。
@@ -350,8 +350,9 @@
 <li>在Git Bash执行命令<pre><code>
 hexo new "my new post"
 </code></pre></li>
-<li>在hexo文件夹下的source_post中打开my-new-post.md，打开方式使用记事本或者其它文本工具，当然最好是使用makedown专用的工具，这里推荐<a href="http://markdownpad.com/" target="_blank" rel="external">markdownpad</a>这个工具。Markdown编写语法自己google一下，不难，很容易就学到手了。<br><pre><code>title: my new post #可以改成中文的，如“新文章”<br>date: 2016-02-21 16:04:09 #发表日期，一般不改动<br>categories: blog #文章文类<h2 id="tags-文章-文章标签，多于一项时用这种格式，只有一项时使用tags-blog"><a href="#tags-文章-文章标签，多于一项时用这种格式，只有一项时使用tags-blog" class="headerlink" title="tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog"></a>tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</h2>这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上<br><a id="more"></a>，在<!--more-->之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more    才能看到。<br></code></pre><br>　　写完文章后，你可以使用1.$ hexo g生成静态文件。2.$ hexo s在本地预览效果。3.hexo d同步到github，然后使用<a href="http://youname.github.io" target="_blank" rel="external">http://youname.github.io</a> 进行访问。</li>
+<li>在hexo文件夹下的source_post中打开my-new-post.md，打开方式使用记事本或者其它文本工具，当然最好是使用makedown专用的工具，这里推荐<a href="http://markdownpad.com/" target="_blank" rel="external">markdownpad</a>这个工具。Markdown编写语法自己google一下，不难，很容易就学到手了。</li>
 </ul>
+<p>　　写完文章后，你可以使用1.$ hexo g生成静态文件。2.$ hexo s在本地预览效果。3.hexo d同步到github，然后使用<a href="http://youname.github.io" target="_blank" rel="external">http://youname.github.io</a> 进行访问。</p>
 <p>   　</p>
 
       
@@ -450,17 +451,8 @@ hexo new "my new post"
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/anan.JPG"
@@ -513,22 +505,6 @@ hexo new "my new post"
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-文章-文章标签，多于一项时用这种格式，只有一项时使用tags-blog"><span class="nav-number">1.</span> <span class="nav-text">tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
