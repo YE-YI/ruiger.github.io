@@ -1799,7 +1799,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #32e378;
+  background: #ffddf2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3015,7 +3015,7 @@ rgba(255,255,255,0.6)
   font-family: 'Comic Sans MS', sans-serif;
   color: #fff;
 }
-.post-tags {
+.posts-expand .post-tags {
   text-align: center;
 }
 .post-tags a {
@@ -3037,6 +3037,9 @@ rgba(255,255,255,0.6)
   margin: 48px 0 0;
   color: #090909;
   font-family: 'Comic Sans MS', sans-serif;
+}
+.site-author-image {
+  border-radius: 15px;
 }
 .links-of-blogroll {
   font-size: 14px;
