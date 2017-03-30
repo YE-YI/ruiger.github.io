@@ -1799,7 +1799,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb646;
+  background: #32e378;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3014,6 +3014,15 @@ rgba(255,255,255,0.6)
   font-size: 28px;
   font-family: 'Comic Sans MS', sans-serif;
   color: #fff;
+}
+.post-tags {
+  text-align: center;
+}
+.post-tags a {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: 0.2s ease-out;
+  padding: 1px 5px;
 }
 .footer {
   background: none;
