@@ -96,7 +96,7 @@
 <meta property="og:image" content="http://yoursite.com/2017/03/29/hexo搭建个人博客/next.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/03/29/hexo搭建个人博客/new_repository.png">
 <meta property="og:image" content="http://yoursite.com/2017/03/29/hexo搭建个人博客/ruiger_hexo.png">
-<meta property="og:updated_time" content="2017-03-30T09:57:50.814Z">
+<meta property="og:updated_time" content="2017-03-31T01:09:00.602Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建个人博客">
 <meta name="twitter:description" content="前沿：　　近期空闲时间较多，在搭建微信公众号时，多多少少遇到了一些问题，以前喜欢将问题记录到印象笔记里，但是笔记格式不好调整。最近看到 一些大神们的博客，貌似都是用hexo搭建的，版式还很漂亮，我也依葫芦画瓢的搭建了一个。">
@@ -373,8 +373,8 @@ hexo s
 </code></pre>
 
 <p>　　用浏览器访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，此时，您应该看到了一个漂亮的博客了，博客里默认给你添加了一篇程序猿专用的文章Hello World，当然这个博客只存在你的本地，别人是无法看到的，hexo3使用的默认主题是landscape。轻轻松松就看到了效果，是不是很激动，这就是hexo的强大之处，接下来讲告诉你怎么把你的博客部署到GitHub上，可以让别人也看到你写的博客。</p>
-<h3 id="GitHub创建Repository"><a href="#GitHub创建Repository" class="headerlink" title="GitHub创建Repository"></a>GitHub创建Repository</h3><p> 　　repository相当于一个仓库，用来放置你的代码的。首先登陆GitHub，并今日个人页面选择repositories，然后New一个repository。<br><img src="/2017/03/29/hexo搭建个人博客/new_repository.png" alt=""><br>创建时，只需要填写Repository name即可，当然这个名字可不是乱写的，名字的格式必须为youname.github.io,例如我的github地址是<a href="https://github.com/ruiger" target="_blank" rel="external">https://github.com/ruiger</a>,我的名字就为ruiger.github.io</p>
-<h3 id="部署本地文件到github"><a href="#部署本地文件到github" class="headerlink" title="部署本地文件到github"></a>部署本地文件到github</h3><p>　　既然Repository已经创建了，现在就把博客放到GitHub看看效果。编辑hexo文件夹下的_config.yml，建议用文本编辑器打开如Notepad++这个是免费的。<br>在_config.yml的最下方，添加如下代码(注意hexo命令:后要跟一个空格)，配置完成并保存。</p>
+<h3 id="GitHub创建Repository"><a href="#GitHub创建Repository" class="headerlink" title="GitHub创建Repository"></a>GitHub创建Repository</h3><p> 　　repository相当于一个仓库，用来放置你的代码的。首先登陆GitHub，并在个人页面选择repositories，然后New一个repository。<br><img src="/2017/03/29/hexo搭建个人博客/new_repository.png" alt=""><br>创建时，只需要填写Repository name即可，当然这个名字可不是乱写的，名字的格式必须为youname.github.io,例如我的github地址是<a href="https://github.com/ruiger" target="_blank" rel="external">https://github.com/ruiger</a>,我的名字就为ruiger.github.io</p>
+<h3 id="部署本地文件到github"><a href="#部署本地文件到github" class="headerlink" title="部署本地文件到github"></a>部署本地文件到github</h3><p>　　既然Repository已经创建了，现在就把博客放到GitHub看看效果。编辑hexo文件夹下的_config.yml，建议用文本编辑器打开(如Notepad++，这个软件是免费的，感谢开源！)。<br>在_config.yml的最下方，添加如下代码(注意hexo命令:后要跟一个空格)，配置完成并保存。</p>
 <pre><code>
 deploy:
   type: git
@@ -409,10 +409,10 @@ tags: [文章] #文章标签，多于一项时用这种格式，只有一项时�
 这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上<!--more-->，在<!--more-->之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more    才能看到。
 </code></pre>
 </li>
-<li><p>写完文章后，你可以使用1.$ hexo g生成静态文件。2.$ hexo s在本地预览效果。3.hexo d同步到github，然后使用<a href="http://youname.github.io" target="_blank" rel="external">http://youname.github.io</a> 进行访问。</p>
+<li><p>写完文章后，你可以使用1.$ hexo g生成静态文件。2.$ hexo s在本地预览效果。3.hexo d同步到github(hexo g；hexo d 两个命令可以合并成一个hexo d -g)，然后使用<a href="http://youname.github.io" target="_blank" rel="external">http://youname.github.io</a> 进行访问。</p>
 </li>
 </ul>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>　　好了，到此你的hexo个人博客应该已经搭建好了，如果你对hexo默认的主题不感冒，可以切换其它更加好看的主题哦。博主现在用的<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next.Muse</a>主题,主题如何切换配置可以查看<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next使用文档</a></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>　　好了，到此你的hexo个人博客应该已经搭建好了，如果你对hexo默认的主题不感冒，可以切换其它更加好看的主题哦。博主现在用的<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next.Mist</a>主题,主题如何切换配置可以查看<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next使用文档</a></p>
 <p>   　</p>
 
       
