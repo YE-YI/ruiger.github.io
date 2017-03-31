@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="睿哥的技术博客">
 <meta property="og:description" content="前沿：　　Java 9已发布一段时间了，Oracle在Java 9里又添加了一些新特性，Java 8已经发布3年之久了，你对Java 8的十大特性又了解多少呢？">
 <meta property="og:image" content="http://yoursite.com/2017/03/31/Java 8十大特性/java.jpg">
-<meta property="og:updated_time" content="2017-03-31T09:53:04.215Z">
+<meta property="og:updated_time" content="2017-03-31T09:54:55.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 8 十大特性">
 <meta name="twitter:description" content="前沿：　　Java 9已发布一段时间了，Oracle在Java 9里又添加了一些新特性，Java 8已经发布3年之久了，你对Java 8的十大特性又了解多少呢？">
@@ -375,7 +375,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,465
+                  1,461
                 </span>
               
 
@@ -420,13 +420,13 @@
 <p>我们还可以在接口中定义静态方法，使用static关键字，也可以提供实现。例如：<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">StaticFunctionInterface</span> &#123;</div><div class="line">    <span class="function"><span class="keyword">static</span> String <span class="title">staticFunction</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"static function"</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <h3 id="三、方法引用"><a href="#三、方法引用" class="headerlink" title="三、方法引用"></a>三、方法引用</h3><p>通常与Lambda表达式联合使用，可以直接引用已有Java类或对象的方法。一般有四种不同的方法引用：</p>
 <ul>
-<li><p>1.构造器引用。语法是Class::new，或者更一般的Class&lt; T &gt;::new，要求构造器方法是没有参数；</p>
+<li><p>构造器引用。语法是Class::new，或者更一般的Class&lt; T &gt;::new，要求构造器方法是没有参数；</p>
 </li>
-<li><p>2.静态方法引用。语法是Class::static_method，要求接受一个Class类型的参数；</p>
+<li><p>静态方法引用。语法是Class::static_method，要求接受一个Class类型的参数；</p>
 </li>
-<li><p>3.特定类的任意对象方法引用。它的语法是Class::method。要求方法是没有参数的；</p>
+<li><p>特定类的任意对象方法引用。它的语法是Class::method。要求方法是没有参数的；</p>
 </li>
-<li><p>4.特定对象的方法引用，它的语法是instance::method。要求方法接受一个参数，与3不同的地方在于，3是在列表元素上分别调用方法，而4是在某个对象上调用方法，将列表元素作为参数传入</p>
+<li><p>特定对象的方法引用，它的语法是instance::method。要求方法接受一个参数，与3不同的地方在于，3是在列表元素上分别调用方法，而4是在某个对象上调用方法，将列表元素作为参数传入</p>
 <h3 id="四、重复注解"><a href="#四、重复注解" class="headerlink" title="四、重复注解"></a>四、重复注解</h3><p>在Java 5中使用注解有一个限制，即相同的注解在同一位置只能声明一次。Java 8引入重复注解，这样相同的注解在同一地方也可以声明多次。重复注解机制本身需要用@Repeatable注解。Java 8在编译器层做了优化，相同注解会以集合的方式保存，因此底层的原理并没有变化。</p>
 <h3 id="五、扩展注解的支持"><a href="#五、扩展注解的支持" class="headerlink" title="五、扩展注解的支持"></a>五、扩展注解的支持</h3><p>Java 8扩展了注解的上下文，几乎可以为任何东西添加注解，包括局部变量、泛型类、父类与接口的实现，连方法的异常也能添加注解。</p>
 <h3 id="六、Optional"><a href="#六、Optional" class="headerlink" title="六、Optional"></a>六、Optional</h3><p>Java 8引入Optional类来防止空指针异常，Optional类最先是由Google的Guava项目引入的。Optional类实际上是个容器：它可以保存类型T的值，或者保存null。使用Optional类我们就不用显式进行空指针检查了</p>
