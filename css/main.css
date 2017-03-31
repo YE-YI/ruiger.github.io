@@ -1799,7 +1799,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7cba5d;
+  background: #131ac7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3056,7 +3056,7 @@ rgba(255,255,255,0.6)
 }
 .sidebar {
   box-shadow: inset 2px 2px 40px #bdb2b2;
-  background: url("/images/sidebar-bk.gif");
+  background: url("/images/sidebar-bk.jpg") no-repeat center;
 }
 .sidebar a {
   color: #649ab6;
